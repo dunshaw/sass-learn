@@ -1,0 +1,34 @@
+// css comment
+/*123456*/
+
+h1{
+  color: red;
+}
+
+//变量定义
+$color:red;
+
+body{
+  header{
+
+  }
+  section{
+
+  }
+}
+
+//函数
+@mixin alert($color:blue){
+  color: $color;
+}
+
+// 继承
+
+.block{
+  margin:10px;
+  padding: 5px;
+}
+
+p{
+  @extend .block;
+}
