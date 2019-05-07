@@ -1,2 +1,2 @@
-$ copmpass create 可写工程名
+$ copmpass create (xxxx)
 

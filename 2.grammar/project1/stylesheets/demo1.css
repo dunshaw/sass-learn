@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* line 1, ../sass/demo1.scss */
+body {
+  background: skyblue;
+  font-size: 14px;
+  color: red;
+  /* beizhubeizhu  中文注释*/
+}
+/* line 6, ../sass/demo1.scss */
+body header {
+  font-weight: bold;
+}
+/* line 9, ../sass/demo1.scss */
+body footer {
+  font-size: 12px;
+}

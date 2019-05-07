@@ -1,0 +1,26 @@
+$fontsize:12px;
+$fontsize:14px !default;   // 默认值
+$paddings: 3px 10px 5px 10px;  //多值变量
+$maps:(color:red,boderColor:blue);   //maps多值变量
+$classname:my-content;
+
+
+
+body{
+  $color: red !global;   //局部变量   !global全局
+  color: $color;
+  font-size: $fontsize;
+  padding: $paddings;
+  padding-left:nth($paddings,1)   // 索引从1开始
+}
+
+footer{
+  color: $color;
+  background-color:map-get($maps,color);
+  border-color: map-get($maps,boderColor);
+}
+
+.#{$classname}{
+  width: 50px;
+  height: 50px;
+}
