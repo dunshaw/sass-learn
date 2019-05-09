@@ -1,0 +1,40 @@
+$myfontcolor:#e1b882;
+body{
+  padding: 0;
+  margin:0;
+  header{
+    .logo{
+      display: inline-block;
+      img{
+        width: 100px;
+      }
+    }
+    nav{
+      display: inline;
+      a{
+        color:$myfontcolor;
+        &:hover{
+          color:#0da5e6;
+        }
+      }
+      span{
+        margin-right: 2px;
+        margin-left: 2px;
+        color:#ddd;;
+      }
+    }
+    select{
+      float: right;
+      margin:1em;
+    }
+  }
+  .container{
+    background:url(../img/baner1.jpg) no-repeat center top;
+    height: 300px;
+  }
+  footer{
+    background:url(../img/baner3.jpg) repeat-x;
+    background-size: contain;
+    height: 300px;margin-top: 30px;
+  }
+}

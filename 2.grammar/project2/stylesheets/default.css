@@ -1,0 +1,48 @@
+/* line 2, ../sass/default.scss */
+body {
+  padding: 0;
+  margin: 0;
+}
+/* line 6, ../sass/default.scss */
+body header .logo {
+  display: inline-block;
+}
+/* line 8, ../sass/default.scss */
+body header .logo img {
+  width: 100px;
+}
+/* line 12, ../sass/default.scss */
+body header nav {
+  display: inline;
+}
+/* line 14, ../sass/default.scss */
+body header nav a {
+  color: #e1b882;
+}
+/* line 16, ../sass/default.scss */
+body header nav a:hover {
+  color: #0da5e6;
+}
+/* line 20, ../sass/default.scss */
+body header nav span {
+  margin-right: 2px;
+  margin-left: 2px;
+  color: #ddd;
+}
+/* line 26, ../sass/default.scss */
+body header select {
+  float: right;
+  margin: 1em;
+}
+/* line 31, ../sass/default.scss */
+body .container {
+  background: url(../img/baner1.jpg) no-repeat center top;
+  height: 300px;
+}
+/* line 35, ../sass/default.scss */
+body footer {
+  background: url(../img/baner3.jpg) repeat-x;
+  background-size: contain;
+  height: 300px;
+  margin-top: 30px;
+}

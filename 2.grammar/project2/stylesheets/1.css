@@ -1,4 +1,12 @@
-/* line 9, ../sass/1.scss */
+@charset "UTF-8";
+@import url(xx/xx.css);
+/* line 1, ../sass/_part1.scss */
+header {
+  color: yellow;
+  font-family: 微软雅黑;
+}
+
+/* line 12, ../sass/1.scss */
 body {
   color: red;
   font-size: 12px;
@@ -6,14 +14,14 @@ body {
   padding-left: 3px;
 }
 
-/* line 17, ../sass/1.scss */
+/* line 20, ../sass/1.scss */
 footer {
   color: red;
   background-color: red;
   border-color: blue;
 }
 
-/* line 23, ../sass/1.scss */
+/* line 26, ../sass/1.scss */
 .my-content {
   width: 50px;
   height: 50px;

@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* line 1, ../sass/index2.scss */
+boby {
+  background: #eee;
+}
+/* line 6, ../sass/index2.scss */
+.container {
+  background: #ddd;
+}
+
+/* line 12, ../sass/index2.scss */
+boby a, boby .four {
+  color: red;
+}
+/* line 14, ../sass/index2.scss */
+boby a:hover, boby .four:hover {
+  color: blue;
+}
+/* line 19, ../sass/index2.scss */
+boby .text-info {
+  color: yellow;
+}
+/* line 22, ../sass/index2.scss */
+.text-info {
+  color: red;
+}
+/* line 24, ../sass/index2.scss */
+nav .text-info {
+  color: blue;
+}
+
+/* 继承与多继承 */
+/* line 32, ../sass/index2.scss */
+.alert, .alert-info {
+  background-color: #ffeedd;
+}
+
+/* line 36, ../sass/index2.scss */
+.small, .alert-info {
+  font-size: 12px;
+}
+
+/* line 40, ../sass/index2.scss */
+.alert-info {
+  color: red;
+}
+
+/* 链式继承 */
+/* line 47, ../sass/index2.scss */
+.one, .two, .three {
+  border: 1px solid red;
+}
+
+/* line 51, ../sass/index2.scss */
+.two, .three {
+  color: red;
+}
+
+/* line 56, ../sass/index2.scss */
+.three {
+  font-size: 14px;
+}
+
+/* 继承交叉合并,避免此用法 */
+/* line 62, ../sass/index2.scss */
+.five a, .five .four {
+  font-weight: bold;
+}
+
+/* 占位选择器 %  */
+/* line 70, ../sass/index2.scss */
+.realsix {
+  margin: 1rem;
+}

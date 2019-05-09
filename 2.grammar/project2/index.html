@@ -1,9 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang='zh-cn'>
 <head>
-  <title>利用变量和导入实现多皮肤</title>
+  <title>利用变量和导入实现多皮肤切换</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
 </head>
 <body>
-
+  <header>
+    <div class="logo">
+      <img src="img/logo.png">
+    </div>
+    <nav>
+      <a href="#">菜单1</a><span>|</span>
+      <a href="#">菜单2</a><span>|</span>
+      <a href="#">菜单3</a><span>|</span>
+    </nav>
+    <select id="myselect">
+      <option value="default">皮肤1</option>
+      <option value="light">皮肤2</option>
+      <option value="red">皮肤3</option>
+    </select>
+  </header>
+  <section class="container"></section>
+  <footer></footer>
 </body>
+<script>
+  $('#myselect').change(function() {
+    console.log(this.value)
+    $("header").removeClass()
+    $("header").addClass(`theme-${this.value}`);
+  });
+</script>
 </html>

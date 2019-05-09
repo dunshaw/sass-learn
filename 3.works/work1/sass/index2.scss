@@ -1,0 +1,75 @@
+boby{
+  background: #eee;
+
+  @media screen and (max-width:600px){
+    @at-root (without:media rule){
+      .container{
+        background:#ddd;
+      }
+    }
+  }
+
+  a{
+    color: red;
+    &:hover{
+      color: blue;
+    }
+  }
+
+  .text-info{
+    color: yellow;
+  }
+  @at-root .text-info{
+    color: red;
+    @at-root nav &{
+      color: blue;
+    }
+  }
+}
+
+
+/* 继承与多继承 */
+.alert{
+  background-color:#ffeedd;
+}
+
+.small{
+  font-size: 12px;
+}
+
+.alert-info{
+  @extend .alert, .small;
+  color: red;
+}
+
+
+/* 链式继承 */
+.one{
+  border: 1px solid red;
+}
+
+.two{
+  @extend .one;
+  color: red;
+}
+
+.three{
+  @extend .two;
+  font-size: 14px;
+}
+
+/* 继承交叉合并,避免此用法 */
+.five a{
+  font-weight: bold;
+}
+.four{
+  @extend a;
+}
+
+/* 占位选择器 %  */
+%six{
+  margin: 1rem;
+}
+.realsix{
+  @extend %six;
+}
