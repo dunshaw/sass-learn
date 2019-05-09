@@ -38,7 +38,7 @@ _xxx.scss(下划线开头，不会生成css文件，只为了导入)
 @import()
 
 
-# work1/sass/index2  
+# works/work1/sass/index2  
 **嵌套**
 & -- 引用父选择器
 
@@ -53,5 +53,22 @@ _xxx.scss(下划线开头，不会生成css文件，只为了导入)
 
 **占位选择器 % **
 
+
+```
+## Basics 3 (project3)
+``` bash
+**数据类型** 
+{
+  Number,String,List,Map,Color,Boolean,Null
+}
+**变量操作**
+{
+  ==,!=
+  <,>,<=,>=
+  +，-，*，/，%
+  尽量用空格隔开
+  单位一致
+} 
+**Mixin**
 
 ```

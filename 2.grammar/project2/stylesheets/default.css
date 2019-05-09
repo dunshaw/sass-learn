@@ -41,7 +41,7 @@ body .container {
 }
 /* line 35, ../sass/default.scss */
 body footer {
-  background: url(../img/baner3.jpg) repeat-x;
+  background: url(../img/baner3.jpg) no-repeat center;
   background-size: contain;
   height: 300px;
   margin-top: 30px;

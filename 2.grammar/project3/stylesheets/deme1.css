@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* 数字类型 */
+/* line 6, ../sass/deme1.scss */
+p {
+  font-size: #n3;
+}
+
+/* 字符串类型 */
+/* line 15, ../sass/deme1.scss */
+.contents {
+  font-size: 12;
+}
+
+/* Bool类型 */
+/* Null类型 */
+/* line 26, ../sass/deme1.scss */
+body {
+  color: red;
+}
+
+/* color类型 */
+/* line 38, ../sass/deme1.scss */
+body {
+  color: #fff;
+}
+
+/* 变量操作 */
+/* line 46, ../sass/deme1.scss */
+span {
+  width: 22px;
+}
+
+/* line 50, ../sass/deme1.scss */
+a:before {
+  content: "Abc";
+}
+
+/* line 54, ../sass/deme1.scss */
+a:before {
+  content: Abc;
+}
+
+/* line 57, ../sass/deme1.scss */
+p {
+  padding: 7px auto;
+}
+
+/* line 62, ../sass/deme1.scss */
+p:before {
+  content: "hello,sass-1.2";
+}
+
+/* line 66, ../sass/deme1.scss */
+p {
+  font: 20px/10px;
+  width: 6px;
+  height: 4px;
+  padding: 5px;
+}

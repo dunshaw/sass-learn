@@ -1,0 +1,32 @@
+/* 简单示例 */
+@mixin cont($color:red,$fontsize:12px){
+  color: $color;
+  font-size: $fontsize;
+}
+
+body{
+  @include cont(#fff,16px);
+}
+
+/* 传递多参数 */
+@mixin box-shadow($shadow...){
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+.shadow{
+  @include box-shadow(0 4px 4px #555, 2px 6px 10px #6dd3ee);
+}
+
+
+/* 传递内容 */
+@mixin style-for-iphone{
+  @media only screen and (min-device-width:320px) and (max-device-width:568){
+    @content;
+  }
+}
+
+@include style-for-iphone{
+  font-size: 12px;
+}

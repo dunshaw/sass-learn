@@ -1,0 +1,71 @@
+/* 数字类型 */
+$n1:1.2;
+$n2:12;
+$n3:14px;
+
+p{
+  font-size:#n3;
+}
+
+/* 字符串类型 */
+$s1:contents;
+$s2:'contents';
+$s3:"contents";
+
+.#{$s3}{
+  font-size: $n2;
+}
+
+/* Bool类型 */
+$bt:ture;
+$bf:false;
+
+/* Null类型 */
+$null:null;
+
+body{
+  @if $null == null{
+    color: red;
+  }
+}
+
+
+/* color类型 */
+$c1:blue;
+$c2:#fff;
+$c3:rgba(0,0,0,0.5);
+
+body{
+  color: $c2;
+}
+
+/* 变量操作 */
+$width1:10px;
+$width2:12px;
+
+span{
+  width: $width1 + $width2;
+} 
+
+a:before{
+  content: "A" + bc;
+}
+
+a:before{
+  content: A + 'bc';
+}
+p{
+  padding: 3px + 4px auto;
+}
+
+$version:1.2;
+p:before{
+  content: 'hello,sass-#{ $version }'
+}
+
+p{
+  font: 20px/10px;
+  width: $width2/2;
+  height: round($width2)/3;
+  padding:(100px/20);
+}

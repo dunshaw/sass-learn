@@ -3,10 +3,11 @@
 <head>
   <title>利用变量和导入实现多皮肤切换</title>
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
   <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
 </head>
-<body>
-  <header>
+<body class='theme-default' >
+  <header class="app-home">
     <div class="logo">
       <img src="img/logo.png">
     </div>
@@ -17,7 +18,7 @@
     </nav>
     <select id="myselect">
       <option value="default">皮肤1</option>
-      <option value="light">皮肤2</option>
+      <option value="yellow">皮肤2</option>
       <option value="red">皮肤3</option>
     </select>
   </header>
@@ -27,8 +28,8 @@
 <script>
   $('#myselect').change(function() {
     console.log(this.value)
-    $("header").removeClass()
-    $("header").addClass(`theme-${this.value}`);
+    $("body").removeClass()
+    $("body").addClass(`theme-${this.value}`);
   });
 </script>
 </html>
